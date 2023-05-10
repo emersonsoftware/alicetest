@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Refcon.EmailGatewayClient": {
+      "commandName": "Project"
+    }
+  }
+}

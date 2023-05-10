@@ -1,0 +1,2650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GMS_Export_Data Site="YM Mobility" SiteType="Vessel" IMO="9457737" PMid="" TimeUTC="2021-04-09T03:00:00.605Z" TimeLMT="2021-04-09T03:00:00.605Z">
+   <System>
+      <Number Name="HoursSinceRestart">309</Number>
+      <Text Name="REFCON_Version">5122</Text>
+      <Text Name="REFCON_FullVersion">5.10.1.5122</Text>
+      <Text Name="REFCON_Bundle_Version"></Text>
+      <Number Name="PollRounds">5110</Number>
+      <Number Name="LastPollRound">2</Number>
+      <Number Name="ContsImported">116</Number>
+      <Number Name="NoOfMasters">16</Number>
+      <Exception TimeUTC="2020-03-07T06:38:35.828125Z" TimeLMT="2020-03-07T06:38:35.827625Z">
+         <Type>York.RefCon.Business.Alarms.AlarmParamsException</Type>
+         <Message>The alarm template for this alarm does not support dynamic priorities</Message>
+         <Source>York.RefCon.Business</Source>
+         <StackTrace>   at York.RefCon.Business.Alarms.AlarmParamsFactory.CreateAlarmParamsDynamic(IAlarmable Owner, AlarmKey whichAlarm, AlarmPriorityEnum desiredPriority) in c:\CCnet\projects\RefCon6\Release11-branch\REFCON6\module\York.RefCon.Business\impl\Alarms\AlarmParamsFactory.cs:line 954
+   at York.RefCon.Business.Broker.AlarmBroker.UpdateAlarmDynamic(AlarmGroupEnum alarmGroup, Int32 alarmNumber, IAlarmable owner, Boolean inAlarm, AlarmCreator creator, AlarmPriorityEnum controllerPriority, String generatedBy) in c:\CCnet\projects\RefCon6\Release11-branch\REFCON6\module\York.RefCon.Business\impl\Brokers\AlarmBroker.cs:line 1213
+   at York.RefCon.Business.Slaves.ControllerSpecific.ControllerSequenceHandler_StarCool.HandleTel_DynamicValues(ContainerTelegramReply reply) in c:\CCnet\projects\RefCon6\Release11-branch\REFCON6\module\York.RefCon.Business\impl\Slaves\ControllerSpecific\ControllerSequenceHandler_StarCool.cs:line 217
+   at York.RefCon.Business.Slaves.ControllerSpecific.ControllerSequenceHandlerBase.ResponseForTelegram(ContainerTelegramReply reply) in c:\CCnet\projects\RefCon6\Release11-branch\REFCON6\module\York.RefCon.Business\impl\Slaves\ControllerSpecific\ControllerSequenceHandler.cs:line 101
+   at York.RefCon.Business.Slaves.ReeferContainer.ResponseForTelegram(SequenceType seq, ContainerTelegramReply reply) in c:\CCnet\projects\RefCon6\Release11-branch\REFCON6\module\York.RefCon.Business\impl\Slaves\Container.cs:line 890
+   at York.RefCon.Business.Broker.ReeferContainerBroker.HandleEvent_FromSlave(RefconEventTelegram_FromSlave telegram) in c:\CCnet\projects\RefCon6\Release11-branch\REFCON6\module\York.RefCon.Business\impl\Brokers\ReeferContainerBroker.cs:line 1492</StackTrace>
+      </Exception>
+   </System>
+   <Plugins>
+      <Plugin Name="REFCON GMS Plugin" Description="Extracts data from REFCON for transmission to Global Monitoring Server (GMS)&#xD;&#xA;&#xD;&#xA;Configuration is done in REFCON Setup dialog." Version="0.9.2.0">1</Plugin>
+   </Plugins>
+   <RMM_Masters>
+      <RMM_Master ID="1/10" Net="1" Node="10" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/11" Net="1" Node="11" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/12" Net="1" Node="12" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/13" Net="1" Node="13" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/14" Net="1" Node="14" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/15" Net="1" Node="15" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/16" Net="1" Node="16" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/17" Net="1" Node="17" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/18" Net="1" Node="18" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/19" Net="1" Node="19" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/20" Net="1" Node="20" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/21" Net="1" Node="21" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/22" Net="1" Node="22" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/23" Net="1" Node="23" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/24" Net="1" Node="24" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+      <RMM_Master ID="1/25" Net="1" Node="25" Group="1">
+         <Text Name="Model">Mk.IV</Text>
+         <Text Name="Eprom">05021800</Text>
+         <Text Name="Flash">06031400</Text>
+         <Indicator Name="Mode">F</Indicator>
+      </RMM_Master>
+   </RMM_Masters>
+   <Danbuss_Nodes>
+      <Danbuss_Node ID="1/10" Net="1" Node="10" Type="Master" PortType="COM">
+         <Number Name="dTrans">141</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/11" Net="1" Node="11" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/12" Net="1" Node="12" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/13" Net="1" Node="13" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/14" Net="1" Node="14" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/15" Net="1" Node="15" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/16" Net="1" Node="16" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/17" Net="1" Node="17" Type="Master" PortType="COM">
+         <Number Name="dTrans">147</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/18" Net="1" Node="18" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/19" Net="1" Node="19" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/20" Net="1" Node="20" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/21" Net="1" Node="21" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/22" Net="1" Node="22" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/23" Net="1" Node="23" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/24" Net="1" Node="24" Type="Master" PortType="COM">
+         <Number Name="dTrans">140</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+      <Danbuss_Node ID="1/25" Net="1" Node="25" Type="Master" PortType="COM">
+         <Number Name="dTrans">146</Number>
+         <Number Name="dRetrans">0</Number>
+         <Number Name="dRejects">0</Number>
+         <Number Name="dCRCErrors">0</Number>
+         <Number Name="dLateAnswers">0</Number>
+         <Number Name="dUnitsDead">0</Number>
+         <Number Name="dIgnored">0</Number>
+         <Indicator Name="Online">Y</Indicator>
+      </Danbuss_Node>
+   </Danbuss_Nodes>
+   <Containers>
+      <Container ID="CXRU1143763">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Text Name="enum name not used" PropertyKey="p45"></Text>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-20</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">65</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04300B00</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3042</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">C1110002771v</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosVa</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12773</Number>
+            <Number Name="InvalidCount">39</Number>
+            <Number Name="NoResponseCount">27</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-09T21:57:51Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:28:22Z</Time>
+            <Number Name="CurrentMaster">10</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R02T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0940-3300</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="CXRU1146485">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Text Name="enum name not used" PropertyKey="p45"></Text>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23.3</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-23.3</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">65</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04300A00</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3021</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">C1111003964p</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosV</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12924</Number>
+            <Number Name="InvalidCount">202</Number>
+            <Number Name="NoResponseCount">15</Number>
+            <Number Name="LoginCount">7</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:00:15Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:29:31Z</Time>
+            <Number Name="CurrentMaster">17</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R01T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0939-4510</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="CXRU1158531">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Text Name="enum name not used" PropertyKey="p45"></Text>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">90</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04300A00</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3021</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">C1205004181t</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosV</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12814</Number>
+            <Number Name="InvalidCount">163</Number>
+            <Number Name="NoResponseCount">4</Number>
+            <Number Name="LoginCount">5</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:01:12Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:29:31Z</Time>
+            <Number Name="CurrentMaster">17</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R01T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0942-0280</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="MORU1100629">
+         <Measurements>
+            <Time Name="TimeToDefr" PropertyKey="p39">2021-04-06T21:00:12Z</Time>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <TimeSpan Name="LogIntvl">01:00:00</TimeSpan>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-20</Float>
+            <Enum PropertyKey="p162">1</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">08000600</Text>
+            <Text Name="CtrlManuf">MCILodam</Text>
+            <Text Name="ContrSW" PropertyKey="p37">0355-4</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">S20093ID443W1112</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">SCI-40 - FA max 35 m3/h</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">6693</Number>
+            <Number Name="InvalidCount">304</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:02:30Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:30:14Z</Time>
+            <Number Name="CurrentMaster">23</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R06T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0261-9560</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="KKFU6726093">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.1</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.1</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5376,DC:5376</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04221451</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">15937</Number>
+            <Number Name="InvalidCount">47</Number>
+            <Number Name="NoResponseCount">3</Number>
+            <Number Name="LoginCount">4</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:02:40Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:30:21Z</Time>
+            <Number Name="CurrentMaster">23</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R06T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0835-8420</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="CXRU1131063">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Text Name="enum name not used" PropertyKey="p45"></Text>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">15.6</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">15.6</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04300B00</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3044</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">C1110002434z</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosVa</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12884</Number>
+            <Number Name="InvalidCount">184</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:05:30Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:30:31Z</Time>
+            <Number Name="CurrentMaster">24</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R02T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0938-5290</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="TEMU9197766">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5370,DC:5370</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04204534</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">15898</Number>
+            <Number Name="InvalidCount">8</Number>
+            <Number Name="NoResponseCount">3</Number>
+            <Number Name="LoginCount">4</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:24:03Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:30:21Z</Time>
+            <Number Name="CurrentMaster">23</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R12T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0832-8560</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="TEMU9156896">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5168,DC:5168</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04178956</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">16073</Number>
+            <Number Name="InvalidCount">185</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:26:16Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:29:52Z</Time>
+            <Number Name="CurrentMaster">22</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R09T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0817-3610</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SZLU9834141">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">06:00:00</TimeSpan>
+            <Time Name="TripStartUTC" PropertyKey="p85">2021-02-17T07:48:00Z</Time>
+            <Time Name="LastDefrostUTC" PropertyKey="p60">2021-02-06T21:07:00Z</Time>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">18</Float>
+            <TimeSpan Name="FreshAirDelay">00:00:00</TimeSpan>
+            <Float Name="Temp_Setp" PropertyKey="p10">18</Float>
+            <Float Name="DefrTerm_Setp">18</Float>
+            <Enum PropertyKey="p162">6</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">00180000</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3.19.0.0</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">E0G3000781</Text>
+            <Time Name="LastOkPTI" PropertyKey="p66">2021-02-17T07:48:00Z</Time>
+            <Time Name="LastOkBriefPTI">2019-04-30T09:39:00Z</Time>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">3666</Number>
+            <Number Name="InvalidCount">398</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:29:38Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:28:58Z</Time>
+            <Number Name="CurrentMaster">16</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R07T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+            <Time Name="LastPwrOffUTC" PropertyKey="p71">2021-03-30T18:53:00Z</Time>
+            <Time Name="LastPwrOnUTC">2021-03-30T19:07:00Z</Time>
+            <Enum PropertyKey="p186">2</Enum>
+            <Indicator Name="WaterCooled" PropertyKey="p29">N</Indicator>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0019</Text>
+               <Text Name="ModemSerial">1339-4429</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="YMLU5366589">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">06:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-23</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">85</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04250400</Text>
+            <Text Name="ContrSW" PropertyKey="p37">260D</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIg</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12787</Number>
+            <Number Name="InvalidCount">77</Number>
+            <Number Name="NoResponseCount">3</Number>
+            <Number Name="LoginCount">4</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:31:23Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:30:42Z</Time>
+            <Number Name="CurrentMaster">25</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R11T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0200-3190</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="YMLU5371590">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-23</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04250400</Text>
+            <Text Name="ContrSW" PropertyKey="p37">2611</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIg</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">13175</Number>
+            <Number Name="InvalidCount">471</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:34:02Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:32:03Z</Time>
+            <Number Name="CurrentMaster">11</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R11T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0206-9860</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SZLU9883763">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">06:00:00</TimeSpan>
+            <Time Name="TripStartUTC" PropertyKey="p85">2021-03-02T01:34:00Z</Time>
+            <Time Name="LastDefrostUTC" PropertyKey="p60">2021-02-22T04:01:00Z</Time>
+            <Enum PropertyKey="p45">21</Enum>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">10</Float>
+            <TimeSpan Name="FreshAirDelay">00:00:00</TimeSpan>
+            <Float Name="Temp_Setp" PropertyKey="p10">10</Float>
+            <Float Name="DefrTerm_Setp">18</Float>
+            <Time Name="PwrMtrTripTime" PropertyKey="p166">2021-03-02T01:34:00Z</Time>
+            <Time Name="PwrMtrStartTime" PropertyKey="p167">2018-10-30T04:21:00Z</Time>
+            <Enum PropertyKey="p176">3</Enum>
+            <Enum PropertyKey="p162">6</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">00180000</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3.20.0.0</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">E0G3005289</Text>
+            <Time Name="LastOkPTI" PropertyKey="p66">2021-03-02T01:34:00Z</Time>
+            <Time Name="LastOkBriefPTI">2018-12-06T12:40:00Z</Time>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">6545</Number>
+            <Number Name="InvalidCount">101</Number>
+            <Number Name="NoResponseCount">9</Number>
+            <Number Name="LoginCount">5</Number>
+            <Time Name="FirstContactUTC">2021-03-09T22:41:15Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:29:03Z</Time>
+            <Number Name="CurrentMaster">16</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R10T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+            <Time Name="LastPwrOffUTC" PropertyKey="p71">2021-03-30T18:39:00Z</Time>
+            <Time Name="LastPwrOnUTC">2021-03-30T18:52:00Z</Time>
+            <Enum PropertyKey="p186">2</Enum>
+            <Indicator Name="WaterCooled" PropertyKey="p29">N</Indicator>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0019</Text>
+               <Text Name="ModemSerial">1414-4475</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="YMLU5420437">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">1.06:00:00</TimeSpan>
+            <Enum PropertyKey="p45">11</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-23</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04270900</Text>
+            <Text Name="ContrSW" PropertyKey="p37">270E</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">K11804015841</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIj</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">13154</Number>
+            <Number Name="InvalidCount">485</Number>
+            <Number Name="NoResponseCount">4</Number>
+            <Number Name="LoginCount">7</Number>
+            <Time Name="FirstContactUTC">2021-03-09T23:54:11Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T02:29:10Z</Time>
+            <Number Name="CurrentMaster">16</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R13T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0099</Text>
+               <Text Name="ModemSerial">0464-2220</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="YMLU5454397">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-15</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-15</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04270900</Text>
+            <Text Name="ContrSW" PropertyKey="p37">2716</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">K12005051833</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIj</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">14965</Number>
+            <Number Name="InvalidCount">133</Number>
+            <Number Name="NoResponseCount">3</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-11T09:32:35Z</Time>
+            <Time Name="LastContactUTC">2021-04-06T05:05:57Z</Time>
+            <Number Name="CurrentMaster">10</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B50R04T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0099</Text>
+               <Text Name="ModemSerial">0495-2350</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="KKFU6956917">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">10</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.1</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.1</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04240300</Text>
+            <Text Name="ContrSW" PropertyKey="p37">24AC</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIId</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">21417</Number>
+            <Number Name="InvalidCount">15397</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-20T21:02:12Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T06:28:35Z</Time>
+            <Number Name="CurrentMaster">22</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R02T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0096</Text>
+               <Text Name="ModemSerial">0711-4168</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SZLU9232170">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5372,DC:5372</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04402306</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">17127</Number>
+            <Number Name="InvalidCount">7264</Number>
+            <Number Name="NoResponseCount">24</Number>
+            <Number Name="LoginCount">33</Number>
+            <Time Name="FirstContactUTC">2021-03-20T21:08:52Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T06:31:30Z</Time>
+            <Number Name="CurrentMaster">17</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R10T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0435-5230</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="TTNU8467366">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5375,DC:5375</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04141489</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">16462</Number>
+            <Number Name="InvalidCount">218</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-20T21:09:59Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T06:31:58Z</Time>
+            <Number Name="CurrentMaster">22</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R04T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0866-5220</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="AKLU6900024">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04240300</Text>
+            <Text Name="ContrSW" PropertyKey="p37">24C2</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIId</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">15632</Number>
+            <Number Name="InvalidCount">3301</Number>
+            <Number Name="NoResponseCount">13</Number>
+            <Number Name="LoginCount">4</Number>
+            <Time Name="FirstContactUTC">2021-03-20T21:11:50Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T06:28:24Z</Time>
+            <Number Name="CurrentMaster">17</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R05T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0096</Text>
+               <Text Name="ModemSerial">0536-2450</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="CAIU5506919">
+         <Measurements>
+            <Time Name="TimeToDefr" PropertyKey="p39">2021-04-07T01:01:49Z</Time>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <TimeSpan Name="LogIntvl">01:00:00</TimeSpan>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Enum PropertyKey="p162">1</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">08000600</Text>
+            <Text Name="CtrlManuf">MCILodam</Text>
+            <Text Name="ContrSW" PropertyKey="p37">0356-4</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">S81682ID443W1230</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">SCI-40 - FA max 75 m3/h</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">6724</Number>
+            <Number Name="InvalidCount">192</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-20T21:13:30Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T06:31:52Z</Time>
+            <Number Name="CurrentMaster">22</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R06T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0803-5930</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SEGU9049280">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">22</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">22</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5371,DC:5371</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04177986</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">16282</Number>
+            <Number Name="InvalidCount">31</Number>
+            <Number Name="NoResponseCount">3</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-20T21:17:47Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T06:28:07Z</Time>
+            <Number Name="CurrentMaster">15</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R03T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0835-3720</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="CXRU1176849">
+         <Measurements>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">EEEEEEEE</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">6867</Number>
+            <Number Name="InvalidCount">4366</Number>
+            <Number Name="NoResponseCount">21</Number>
+            <Number Name="LoginCount">28</Number>
+            <Time Name="FirstContactUTC">2021-03-20T22:16:26Z</Time>
+            <Time Name="LastContactUTC">2021-04-02T23:05:08Z</Time>
+            <Number Name="CurrentMaster">17</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R16T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">011D</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SZLU3616610">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Setp" PropertyKey="p10">-18</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04260700</Text>
+            <Text Name="ContrSW" PropertyKey="p37">2609</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIg</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">1500</Number>
+            <Number Name="InvalidCount">176</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">1</Number>
+            <Time Name="FirstContactUTC">2021-04-05T13:01:07Z</Time>
+            <Time Name="LastContactUTC">2021-04-06T05:11:47Z</Time>
+            <Number Name="CurrentMaster">10</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Text Name="Location" PropertyKey="p57"></Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0814-4780</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SEGU9303619">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">22</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">22</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">80</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04260800</Text>
+            <Text Name="ContrSW" PropertyKey="p37">2673</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIh</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">13035</Number>
+            <Number Name="InvalidCount">61</Number>
+            <Number Name="NoResponseCount">12</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-20T23:42:05Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T06:02:23Z</Time>
+            <Number Name="CurrentMaster">16</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R11T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0886-9990</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="CXRU1183010">
+         <Measurements>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">EEEEEEEE</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">2371</Number>
+            <Number Name="InvalidCount">1888</Number>
+            <Number Name="NoResponseCount">15</Number>
+            <Number Name="LoginCount">20</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:20:00Z</Time>
+            <Time Name="LastContactUTC">2021-03-28T17:24:34Z</Time>
+            <Number Name="CurrentMaster">10</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R13T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">011D</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="NYKU7174600">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-1.6</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04240300</Text>
+            <Text Name="ContrSW" PropertyKey="p37">24C1</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIId</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12440</Number>
+            <Number Name="InvalidCount">175</Number>
+            <Number Name="NoResponseCount">4</Number>
+            <Number Name="LoginCount">5</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:21:06Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:43:36Z</Time>
+            <Number Name="CurrentMaster">11</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R14T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0150-1900</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="CXRU1138258">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Text Name="enum name not used" PropertyKey="p45"></Text>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">55</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04300A00</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3021</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosV</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12522</Number>
+            <Number Name="InvalidCount">264</Number>
+            <Number Name="NoResponseCount">3</Number>
+            <Number Name="LoginCount">4</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:24:11Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:40:55Z</Time>
+            <Number Name="CurrentMaster">23</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R16T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0940-7810</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SEGU9395636">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04260800</Text>
+            <Text Name="ContrSW" PropertyKey="p37">266C</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIh</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12531</Number>
+            <Number Name="InvalidCount">271</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:25:00Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:42:47Z</Time>
+            <Number Name="CurrentMaster">10</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R08T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0404-4470</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="MORU1308588">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Text Name="enum name not used" PropertyKey="p45"></Text>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04300B00</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3044</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">C1210008280t</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosVa</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">8174</Number>
+            <Number Name="InvalidCount">7014</Number>
+            <Number Name="NoResponseCount">137</Number>
+            <Number Name="LoginCount">42</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:25:35Z</Time>
+            <Time Name="LastContactUTC">2021-04-05T04:03:03Z</Time>
+            <Number Name="CurrentMaster">12</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R06T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0803-5030</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="TTNU8303887">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5373,DC:5373</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04271760</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">15865</Number>
+            <Number Name="InvalidCount">548</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:27:51Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:39:06Z</Time>
+            <Number Name="CurrentMaster">11</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R15T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0858-5600</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="MORU0709415">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04240300</Text>
+            <Text Name="ContrSW" PropertyKey="p37">24C1</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIId</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12731</Number>
+            <Number Name="InvalidCount">402</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:28:49Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:43:36Z</Time>
+            <Number Name="CurrentMaster">11</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R06T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0096</Text>
+               <Text Name="ModemSerial">0620-3710</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SZLU9230542">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5373,DC:5373</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04403464</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">17634</Number>
+            <Number Name="InvalidCount">12081</Number>
+            <Number Name="NoResponseCount">43</Number>
+            <Number Name="LoginCount">75</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:31:59Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:42:55Z</Time>
+            <Number Name="CurrentMaster">10</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R10T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0428-2230</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="KKFU6729507">
+         <Measurements>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">82928292</Text>
+            <Text Name="ContrSW" PropertyKey="p37">C:5377,DC:5377</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">04220213</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">15575</Number>
+            <Number Name="InvalidCount">281</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-21T00:43:34Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:38:44Z</Time>
+            <Number Name="CurrentMaster">10</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R09T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0831-9970</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="MORU1300490">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Text Name="enum name not used" PropertyKey="p45"></Text>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04300A00</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3021</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">C1206007151s</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosV</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12664</Number>
+            <Number Name="InvalidCount">408</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-21T01:21:59Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:43:37Z</Time>
+            <Number Name="CurrentMaster">11</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R12T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0800-2540</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SEGU9319451">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">1.06:00:00</TimeSpan>
+            <Enum PropertyKey="p45">12</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">65</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04260800</Text>
+            <Text Name="ContrSW" PropertyKey="p37">2666</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIIh</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">12657</Number>
+            <Number Name="InvalidCount">409</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-21T01:23:27Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T19:43:35Z</Time>
+            <Number Name="CurrentMaster">11</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R14T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Text Name="ModemSerial">0407-9270</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="YMLU5434087">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">06:00:00</TimeSpan>
+            <Time Name="TripStartUTC" PropertyKey="p85">2021-02-22T21:34:00Z</Time>
+            <Time Name="LastDefrostUTC" PropertyKey="p60">2021-04-08T08:08:00Z</Time>
+            <Enum PropertyKey="p45">21</Enum>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">2.7</Float>
+            <TimeSpan Name="FreshAirDelay">00:00:00</TimeSpan>
+            <Float Name="Temp_Setp" PropertyKey="p10">2.7</Float>
+            <Float Name="DefrTerm_Setp">18</Float>
+            <Enum PropertyKey="p162">6</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">00180000</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3.19.0.0</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">E0GM001789</Text>
+            <Time Name="LastOkPTI" PropertyKey="p66">2020-09-21T18:04:00Z</Time>
+            <Time Name="LastOkBriefPTI">2021-02-22T21:34:00Z</Time>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">4102</Number>
+            <Number Name="InvalidCount">287</Number>
+            <Number Name="NoResponseCount">3</Number>
+            <Number Name="LoginCount">3</Number>
+            <Time Name="FirstContactUTC">2021-03-21T08:32:29Z</Time>
+            <Time Name="LastContactUTC">2021-04-06T05:14:59Z</Time>
+            <Number Name="CurrentMaster">13</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R11T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+            <Time Name="LastPwrOffUTC" PropertyKey="p71">2021-03-30T18:32:00Z</Time>
+            <Time Name="LastPwrOnUTC">2021-03-30T18:46:00Z</Time>
+            <Enum PropertyKey="p186">2</Enum>
+            <Indicator Name="WaterCooled" PropertyKey="p29">N</Indicator>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0019</Text>
+               <Text Name="ModemSerial">1937-0072</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="TLLU1103587">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R05T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="CXRU1360223">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R05T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TLLU1113651">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R06T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TCLU1355092">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R07T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9712945">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R07T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="MORU0607012">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">12:00:00</TimeSpan>
+            <Enum PropertyKey="p45">10</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+            <Float Name="Temp_Setp" PropertyKey="p10">1.7</Float>
+            <Float Name="Hum_Setp" PropertyKey="p15">75</Float>
+            <Enum PropertyKey="p162">13</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">04240300</Text>
+            <Text Name="ContrSW" PropertyKey="p37">24B6</Text>
+            <Text Name="CtrlHWver" PropertyKey="p155">DaikinDecosIIId</Text>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">10092</Number>
+            <Number Name="InvalidCount">9043</Number>
+            <Number Name="NoResponseCount">27</Number>
+            <Number Name="LoginCount">12</Number>
+            <Time Name="FirstContactUTC">2021-03-22T02:13:03Z</Time>
+            <Time Name="LastContactUTC">2021-04-04T18:43:58Z</Time>
+            <Number Name="CurrentMaster">11</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R08T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0096</Text>
+               <Text Name="ModemSerial">0528-4260</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="TTNU8156620">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R09T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="NYKU7151409">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R10T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="CAIU5536322">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R11T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8024692">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R11T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="NYKU7149675">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R12T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TEMU9571346">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R13T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8166505">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R15T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9083230">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B10R16T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="YMLU5413973">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">2.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R01T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="HDMU5566688">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R03T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="OTPU6259005">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R03T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TEMU9085508">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R05T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9713406">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R05T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="MORU1129751">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R07T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SEGU9309392">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R07T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="HDMU5540282">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R09T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="OTPU6043886">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R09T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="MORU1316496">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:34Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R11T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TEMU9541700">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R13T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="BMOU9798552">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R13T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8296345">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R15T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="NYKU7157829">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B18R15T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="FSCU5722113">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R01T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="MORU1301290">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R01T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TGHU9942710">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R01T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8406191">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R02T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="BMOU9722243">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R02T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SEGU9185075">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R03T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TEMU9540690">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R03T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TCLU1270360">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R04T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9720540">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R04T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="CXRU1226662">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R05T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="MORU1313970">
+         <Measurements>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">N</Indicator>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Indicator Name="CommStat">N</Indicator>
+            <Number Name="MessageCount">5110</Number>
+            <Number Name="InvalidCount">0</Number>
+            <Number Name="NoResponseCount">5110</Number>
+            <Number Name="LoginCount">1</Number>
+            <Time Name="FirstContactUTC">2021-03-22T03:57:13Z</Time>
+            <Time Name="LastContactUTC">2021-03-22T04:00:53Z</Time>
+            <Number Name="CurrentMaster">17</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R05T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0097</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+      <Container ID="SEGU9837770">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R06T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="OTPU6263242">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R07T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8024645">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R07T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8060489">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R07T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8815590">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R08T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="KKFU6761200">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R08T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9559939">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R08T86</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="FSCU5685961">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R09T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SCEU9000720">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R09T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9666958">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R10T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8104334">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R11T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="FSCU5686567">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">22</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R12T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8154016">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">22</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R12T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TRIU8277102">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R13T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="NYKU7154840">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R13T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="FSCU5955028">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R14T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="FSCU5730227">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.6</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R14T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TCLU1271366">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R15T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SEGU9896279">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R15T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="KKFU6966788">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B34R16T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="FSCU5831794">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R03T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="HMMU5415000">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">2.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R03T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="BMOU9870596">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R04T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="CAIU5408168">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">1.1</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R04T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SEGU9181911">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23.3</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R05T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SEGU9837810">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-18</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R05T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9527680">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23.3</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R07T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SEGU9906741">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-18</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R08T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9409060">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">3.3</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R08T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TCLU1307730">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">2.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R09T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TCLU1141070">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-28</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R10T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TLLU1083011">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">12.7</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R12T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="YMLU5388802">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R14T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="YMLU5398204">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B42R14T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TRIU8696876">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">3.3</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B50R01T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8020418">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-23.3</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B50R01T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="HDMU5570332">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-18</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B50R02T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="KKFU6729549">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-18</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B50R02T84</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TTNU8967989">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B50R04T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="TLLU1104578">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B54R01T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="BMOU9772645">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B54R02T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU9622230">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B54R03T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SEGU9895483">
+         <Measurements>
+            <Float Name="Temp_Manifest" PropertyKey="p50">-20</Float>
+         </Measurements>
+         <Diagnostics>
+            <Time Name="FirstPlanDataUTC">2021-03-22T01:48:35Z</Time>
+            <Text Name="Location" PropertyKey="p57">B54R04T82</Text>
+            <Text Name="Size">40' type:4432</Text>
+         </Diagnostics>
+         <Modems />
+      </Container>
+      <Container ID="SZLU3806348">
+         <Measurements>
+            <TimeSpan Name="DefrIntv" PropertyKey="p177">06:00:00</TimeSpan>
+            <Time Name="TripStartUTC" PropertyKey="p85">2021-02-05T01:31:00Z</Time>
+            <Time Name="LastDefrostUTC" PropertyKey="p60">2021-04-09T11:20:00Z</Time>
+            <Enum PropertyKey="p45">21</Enum>
+            <Enum PropertyKey="p188">1</Enum>
+            <Indicator Name="OnlineDataOK">N</Indicator>
+            <Indicator Name="OfflineDataOK">N</Indicator>
+            <Indicator Name="Obsolete">Y</Indicator>
+            <TimeSpan Name="FreshAirDelay">00:00:00</TimeSpan>
+            <Float Name="Temp_Setp" PropertyKey="p10">-25</Float>
+            <Float Name="DefrTerm_Setp">18</Float>
+            <Enum PropertyKey="p162">6</Enum>
+         </Measurements>
+         <Diagnostics>
+            <Text Name="EqID">00180000</Text>
+            <Text Name="ContrSW" PropertyKey="p37">3.17.0.0</Text>
+            <Text Name="ContrSerial" PropertyKey="p36">E0G3004686</Text>
+            <Time Name="LastOkPTI" PropertyKey="p66">2020-11-09T09:05:00Z</Time>
+            <Time Name="LastOkBriefPTI">2021-02-05T01:31:00Z</Time>
+            <Indicator Name="CommStat">N</Indicator>
+            <Text Name="Source">(PCT)</Text>
+            <Number Name="MessageCount">540</Number>
+            <Number Name="InvalidCount">195</Number>
+            <Number Name="NoResponseCount">1</Number>
+            <Number Name="LoginCount">1</Number>
+            <Time Name="FirstContactUTC">2021-04-05T13:06:37Z</Time>
+            <Time Name="LastContactUTC">2021-04-06T05:09:48Z</Time>
+            <Number Name="CurrentMaster">24</Number>
+            <Number Name="CurrentNet">1</Number>
+            <Text Name="Location" PropertyKey="p57"></Text>
+            <Time Name="LastPwrOffUTC" PropertyKey="p71">2021-04-09T09:31:00Z</Time>
+            <Time Name="LastPwrOnUTC">2021-04-09T10:09:00Z</Time>
+            <Enum PropertyKey="p186">2</Enum>
+            <Indicator Name="WaterCooled" PropertyKey="p29">N</Indicator>
+         </Diagnostics>
+         <Modems>
+            <Modem>
+               <Indicator Name="PCTonline">N</Indicator>
+               <Text Name="ModemType">0019</Text>
+               <Text Name="ModemSerial">1411-2467</Text>
+               <Indicator Name="ModemClass">H</Indicator>
+            </Modem>
+         </Modems>
+      </Container>
+   </Containers>
+</GMS_Export_Data>

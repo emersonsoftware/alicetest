@@ -1,0 +1,32 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ExpungeMailTimerInterval": "0 */5 * * * *",
+    "IdleDurationMinutes": 3,
+    "StorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=saccdevrefcon;AccountKey=He1dEgpeor9SiYBtpJpGfPEaf9C3jhPvME2biFjrJeuKbAN4AM0KnRmjb6EqmfGNpGhq9jsGugir+AStlBQmnA==;EndpointSuffix=core.windows.net",
+    "TimerInterval": "0 */4 * * * *",
+    "FunctionRetryCount": 2,
+    "EmailProcessRetryCount": 5
+  },
+  "BlobStorage": {
+    "ContainerName": "refcon-stats-blob",
+    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=saccdevrefcon;AccountKey=He1dEgpeor9SiYBtpJpGfPEaf9C3jhPvME2biFjrJeuKbAN4AM0KnRmjb6EqmfGNpGhq9jsGugir+AStlBQmnA==;EndpointSuffix=core.windows.net",
+    "TransientErrorRetryCount": 5,
+    "TransientErrorRetryInterval": 3 // Interval is in seconds.
+  },
+  "EmailConfiguration": {
+    "Host": "mail.reefers-online.com",
+    "Password": "",
+    "Port": "143",
+    "Username": "sitestatistics_dev@reefers-online.com"
+  },
+  "ServiceBus": {
+    "ConnectionString": "Endpoint=sb://sbus-dev-stats.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SQHq8LUIzdPFmbvbWdb6CQwDy2P7R0EEgbhwGi4BFlA=",
+    "QueueName": "sbus-dev-stats",
+    "TopicName": "blestats",
+    "TransientErrorRetryCount": 5,
+    "TransientErrorSleepDuration": 5000
+  }
+}
